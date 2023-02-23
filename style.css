@@ -239,6 +239,26 @@ footer {
 
 @media (min-width: 600px) {
     .container {
-        padding-top: 120px;
+        padding-top: 115px;
+    }
+    /* CMD Content */
+
+    /* SUPPORT Content */
+
+    /* Footer Content */
+    .container-ft {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
+    .rs-container {
+        padding-left: 1.5em;
+    }
+
+    .inf-footer a {
+        padding-right: 1.5em;
     }
 }
