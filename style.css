@@ -76,7 +76,7 @@ nav a:nth-of-type(1) {
 .inv-btn {
     position: relative;
     height: 50px;
-    width: 200px;
+    width: 250px;
     border: 0;
     border-radius: 5px;
     text-transform: uppercase;
@@ -85,6 +85,17 @@ nav a:nth-of-type(1) {
     overflow: hidden;
     box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
     z-index: -2;
+}
+
+.inv-btn a {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inv-btn img {
+    height: 30px;
 }
 
 .fill-btn {
@@ -150,16 +161,20 @@ nav a:nth-of-type(1) {
 
 /* Start CMD Content and SUPPORT Content*/
 
-.container-inf,
-.container-sup {
+.container-inf {
     margin: 9.16em 1em 2em;
     padding-bottom: 15px;
     border-radius: 10px;
     background-color: #00d400;
 }
 
-.inf-bot h1,
-.container-sup h1 {
+.inf-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inf-bot h1 {
     padding: 1.8em 1em 0;
     letter-spacing: .125em;
     font-size: 1.5em;
@@ -167,8 +182,35 @@ nav a:nth-of-type(1) {
     color: #fff;
 }
 
-.inf-bot p,
-.container-sup p {
+.inf-bot p {
+    padding: 1.5em 1.2em 0;
+    color: #fff;
+}
+
+.imgI-bot img {
+    display: none;
+    height: 50px;
+}
+
+
+/* Start SUPPORT Content */
+
+.container-sup {
+    margin: 9.16em 1em 2em;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: #00d400;
+}
+
+.inf-sup h1 {
+    padding: 1.8em 1em 0;
+    letter-spacing: .125em;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.inf-sup p {
     padding: 1.5em 1.2em 0;
     color: #fff;
 }
@@ -195,157 +237,28 @@ footer {
     color: #fff;
 }
 
-
-
 @media (min-width: 600px) {
-    .pc-desing {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-size: 2.5em;
-        text-align: center;
-        color: aliceblue;
-        padding-bottom: 2.2em;
+    .container {
+        padding-top: 115px;
     }
+    /* CMD Content */
 
-    .container #title {
-        display: none;
-    }
+    /* SUPPORT Content */
 
-    .inv-btn {
-        display: none;
-    }
-
-
-    .container-inf {
-        display: none;
-    }
-
-    .container-sup {
-        display: none;
-    }
-
+    /* Footer Content */
     .container-ft {
-        display: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 0;
+    }
+
+    .rs-container {
+        padding-left: 1.5em;
+    }
+
+    .inf-footer a {
+        padding-right: 1.5em;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-header {
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    top: -1px;
-    padding: 0 0 15px 0;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.logo:link,
-.logo:visited,
-.nav-link:link,
-.nav-link:visited {
-    text-decoration: none;
-    outline: none;
-    color: #fff
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin: 10px 0 15px 0;
-    padding: 10px 15px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-}
-
-.logo img {
-    margin: 0 15px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-nav a {
-    font-weight: 600px;
-    margin: 2px 2px;
-    padding: 5px 5px;
-    background: rgba(3, 3, 3, 0.6);
-    border-radius: 8px;
-}
-
-.container {
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    margin: 30px 10px 0;
-    padding: 20px 15px 20px;
-}
-
-.container h1 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 5px
-}
-
-.title-pc {
-    display: none;
-}
-
-.container p {
-    font-size: 17px;
-    letter-spacing: 2px;
-    color: #fff;
-}
-
-.invite-link:link,
-.invite-link:visited {
-    backdrop-filter: blur(10px);
-    text-decoration: none;
-    outline: none;
-    border: 1px solid black;
-
-}
-
-.container .invite-link {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 10px 5px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    color: #fff;
-}
-
-.container img {
-    display: none;
-}
-*/
