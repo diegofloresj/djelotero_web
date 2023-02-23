@@ -291,7 +291,7 @@ a:nth-of-type(3) {
 
     .inf-sup {
         display: flex;
-        flex-direction:row-reverse
+        flex-direction: row-inverse;
         justify-content: space-between;
     }
 
