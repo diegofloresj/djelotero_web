@@ -18,6 +18,10 @@ header {
     flex-direction: row;
     padding-bottom: .2em;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
     background-color: #151618;
 }
 
@@ -58,7 +62,7 @@ nav a:nth-of-type(1) {
 /*Start Main Content*/
 
 .container {
-    margin: 1.25em 1em 2em;
+    margin: 7em 1em 5em;
 }
 
 .slogan-bot {
