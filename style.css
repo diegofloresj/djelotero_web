@@ -283,6 +283,28 @@ a:nth-of-type(3) {
 
     /* SUPPORT Content */
 
+    .container-sup {
+        padding-bottom: 0;
+        display: flex;
+        margin: 9.16em 9.16em;
+    }
+
+    .inf-sup {
+        display: flex;
+        flex-direction: row-inverse;
+        justify-content: space-between;
+    }
+
+    .sup-bot {
+        margin: 1.25em 3.5em;
+    }
+
+    .imgI-bot img {
+        display: flex;
+        height: 300px;
+        margin: 1.25em 3.5em;
+    }
+
     /* Footer Content */
     .container-ft {
         display: flex;
